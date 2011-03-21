@@ -52,9 +52,9 @@ function extract {
 
 function ss {
     if [ -e script/rails ]; then
-        script/rails server $@
+        script/rails server -u $@
     else
-        script/server $@
+        script/server -u $@
     fi
 }
 
@@ -71,5 +71,13 @@ function sg {
         script/rails generate $@
     else
         script/generate $@
+    fi
+}
+
+function sdb {
+    if [ -e script/rails ]; then
+        script/rails dbconsole $@
+    else
+        script/dbconsole $@
     fi
 }
