@@ -10,4 +10,5 @@ source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
 source ~/.zsh/plugins/command_coloring.zsh
 
+# RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
