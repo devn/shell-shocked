@@ -16,6 +16,10 @@ alias gpull='git pull'
 alias gpush='git push'
 alias grm='git rm'
 alias gst='git status'
+alias glul='git log --oneline --graph --simplify-by-decoration'
+alias glol='git log --oneline --graph'
+
+alias be='bundle exec'
 
 # system
 alias l='ls -aFG'
@@ -25,6 +29,9 @@ alias la='ls -Ga'
 
 alias please='sudo'
 alias c='clear'
+
+alias flush-dns='sudo dscacheutil -flushcache'
+alias flush-arp='sudo arp -a -d'
 
 alias psack='ps aux | ack'
 alias psgrep='ps aux | grep'
@@ -42,10 +49,16 @@ alias polish='gem update'
 alias price='gem list -r'
 alias sell='gem uninstall'
 alias shop='gem search -r'
+alias surplus='gem list | ack ","'
 
 # editors
-alias ee='$HOME/bin/emacsclient -c -n'
-alias e='$HOME/bin/emacsclient -c'
+# alias ee='$HOME/bin/emacsclient -c -n'
+# alias e='$HOME/bin/emacsclient -c'
+alias ee='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/bin/emacsclient -c -n'
+alias e='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/bin/emacsclient -c'
+alias evisor='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw -q'
+alias emacs-terminal='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw'
+alias emacs='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw'
 
 alias v='mvim'
 alias vv='mvim .'
@@ -64,8 +77,12 @@ alias sx='screen -aAx'
 alias cycle_passenger='touch tmp/restart.txt'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias mongoup='mongod run --config /usr/local/Cellar/mongodb/1.6.3-x86_64/mongod.conf'
 alias mysqlup='mysql.server start'
+alias mongoup='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf'
+
+# mount points
+alias tcr='/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt ~/Desktop/s'
+alias tcb='/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt ~/Desktop/b'
 
 # bookmarks
 alias m1='alias g1="cd `pwd`"'
