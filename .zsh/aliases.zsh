@@ -21,6 +21,10 @@ alias glol='git log --oneline --graph'
 
 alias be='bundle exec'
 
+# music
+alias ncmpc='ncmpc --colors --mouse'
+alias tunes='ncmpc --colors --mouse'
+
 # system
 alias l='ls -aFG'
 alias ls='ls -GFh'
@@ -79,6 +83,8 @@ alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias mysqlup='mysql.server start'
 alias mongoup='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf'
+alias nginx-down='sudo kill $(ps aux | grep nginx | grep master | cut -c 16-21)'
+alias nginx-up='sudo nginx'
 
 # mount points
 alias tcr='/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt ~/Desktop/s'

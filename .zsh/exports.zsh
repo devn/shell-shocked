@@ -1,8 +1,9 @@
-export CLOJURESCRIPT_HOME=~/git/clojurescript
-export NODE_PATH=/usr/local/lib/node
 PYPATH=:/usr/local/share/python
 # export CLOJURE_HOME=~/git/clojure-1.3.0-beta
 export PATH=$HOME/bin:$PYPATH:/usr/local/bin:/usr/local/sbin:$CLOJURESCRIPT_HOME/bin:$NODE_PATH::$PATH
+export V8_HOME=/Users/defn/lib/v8/
+export CLOJURESCRIPT_HOME=~/git/clojurescript
+export NODE_PATH=/usr/local/lib/node
 # export CDPATH=.:~/src/personal:~/src/opensource:~/src/bendyworks:~/src/configs:~/Documents
 
 # export JAVA_HOME=/usr/lib/jvm/java-6-sun
@@ -18,4 +19,4 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
 
 export PAGER=most
-export EDITOR="emacs"
+export EDITOR="/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw"
